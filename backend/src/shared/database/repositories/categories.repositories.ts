@@ -9,4 +9,8 @@ export class CategoriesRepository {
   async findMany(findMany: Prisma.CategoryFindManyArgs) {
     return await this.prisma.category.findMany(findMany);
   }
+
+  async findFirst(findFirst: Prisma.CategoryFindFirstArgs) {
+    return await this.prisma.category.findFirst(findFirst);
+  }
 }
